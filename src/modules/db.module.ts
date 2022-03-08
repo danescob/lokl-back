@@ -1,4 +1,4 @@
-import mysql from "mysql";
+import mysql from "mysql2";
 import {DB, HOST, PASSWORD, USER} from "../config/db.config";
 // Create a connection to the database
 export const connection = mysql.createConnection({
