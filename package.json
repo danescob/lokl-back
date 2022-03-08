@@ -18,7 +18,6 @@
   "author": "Never Bit SAS",
   "license": "ISC",
   "dependencies": {
-    "@types/mysql": "^2.15.21",
     "@types/nodemailer": "^6.4.4",
     "@types/sequelize": "^4.28.11",
     "cors": "^2.8.5",
