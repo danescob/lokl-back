@@ -33,7 +33,7 @@ export class UsuarioController {
               if (err) {
                 return console.log(err);
               } 
-              // CorreoService.enviar(usuario.correo, 'Simulacion de Ganancias con LOKL', str);
+              CorreoService.enviar(usuario.correo, 'Simulacion de Ganancias con LOKL', str);
             });
             response.status(200).send({usuario, simulacion: res});
           });

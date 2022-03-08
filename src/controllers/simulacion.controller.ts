@@ -3,6 +3,7 @@ import { connection } from "../modules/db.module";
 import { createHash } from "crypto";
 import { renderFile } from "ejs";
 import { SimulacionModel } from "../models/simulacion.model";
+import { CorreoService } from "../services/correo";
 
 export class SimulacionControlller {
   static get = (response: any, request: any) => {
