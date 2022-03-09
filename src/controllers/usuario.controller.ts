@@ -77,7 +77,7 @@ export class UsuarioController {
   }
 
   static validarCorreo = (usuario:UsuarioModel) => {
-    if(!usuario.validado){
+    // if(!usuario.validado){
       let url = process.env.FROT_URL+'simulador/'+usuario.hash;
       renderFile('./src/view/correo.ejs', {usuario, url}, {}, (err:any, str:any) => {
         if (err) {
@@ -85,7 +85,7 @@ export class UsuarioController {
         } 
         CorreoService.enviar(usuario.correo, 'Valida tu correo con LOKL', str);
       });
-    }
+    // }
   }
 
   static crearSimulacion = (simulacion: SimulacionModel, usuario: UsuarioModel,response:any) => {
